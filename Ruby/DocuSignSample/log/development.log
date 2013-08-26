@@ -3491,3 +3491,698 @@ Started GET "/send_document" for 127.0.0.1 at Tue Jul 26 13:52:20 -0700 2011
 Rendered send_document/_form.html.erb (2.6ms)
 Rendered send_document/create.html.erb within layouts/application (11.2ms)
 Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-08 12:05:08 +0530
+Processing by LoginsController#new as HTML
+  Rendered logins/_form.html.erb (17.5ms)
+  Rendered logins/new.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/logins/create" for 127.0.0.1 at 2013-08-08 12:06:05 +0530
+Processing by LoginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0SYNTckI1V6t29d+RFsWWlqKMk5mxBWgRIqz24pfMdc=", "email"=>"prafulla.kiran@gmail.com", "password"=>"[FILTERED]", "Integrator Key"=>"MART-368aa167-2516-4304-a38e-95c71fe0503d", "commit"=>"Login"}
+Completed 500 Internal Server Error in 10ms
+
+ArgumentError (unsupported proxy proxy.iiit.ac.in:8080):
+  app/controllers/logins_controller.rb:42:in `create'
+
+
+  Rendered /Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started POST "/logins/create" for 127.0.0.1 at 2013-08-08 12:06:29 +0530
+Processing by LoginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0SYNTckI1V6t29d+RFsWWlqKMk5mxBWgRIqz24pfMdc=", "email"=>"prafulla.kiran@gmail.com", "password"=>"[FILTERED]", "Integrator Key"=>"MART-368aa167-2516-4304-a38e-95c71fe0503d", "commit"=>"Login"}
+Completed 500 Internal Server Error in 1209ms
+
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed):
+  app/controllers/logins_controller.rb:42:in `create'
+
+
+  Rendered /Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.7ms)
+
+
+Started POST "/logins/create" for 127.0.0.1 at 2013-08-08 12:13:41 +0530
+Processing by LoginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0SYNTckI1V6t29d+RFsWWlqKMk5mxBWgRIqz24pfMdc=", "email"=>"prafulla.kiran@gmail.com", "password"=>"[FILTERED]", "Integrator Key"=>"MART-368aa167-2516-4304-a38e-95c71fe0503d", "commit"=>"Login"}
+Redirected to http://localhost:3000/send_document
+Completed 302 Found in 2214ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/send_document" for 127.0.0.1 at 2013-08-08 12:13:44 +0530
+Processing by SendDocumentController#create as HTML
+  Rendered send_document/_form.html.erb (3.8ms)
+  Rendered send_document/create.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_template" for 127.0.0.1 at 2013-08-08 12:14:12 +0530
+Processing by SendTemplateController#create as HTML
+  Rendered send_template/_get_templates.erb (2.1ms)
+  Rendered send_template/get_template.erb within layouts/application (3.6ms)
+Completed 200 OK in 2166ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_document" for 127.0.0.1 at 2013-08-08 12:14:27 +0530
+Processing by SendDocumentController#create as HTML
+  Rendered send_document/_form.html.erb (2.1ms)
+  Rendered send_document/create.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/send_document/send_envelope" for 127.0.0.1 at 2013-08-08 12:14:33 +0530
+Processing by SendDocumentController#send_envelope as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0SYNTckI1V6t29d+RFsWWlqKMk5mxBWgRIqz24pfMdc=", "subject"=>"", "emailBlurb"=>"", "RecipientName1"=>"", "RecipientEmail1"=>"", "RecipientSecurity1"=>"None", "RecipientSecuritySetting1"=>"", "RecipientInviteToggle1"=>"true", "reminders"=>"", "addsig"=>"true", "formfields"=>"true", "conditionalfields"=>"true", "expiration"=>"", "SendNow"=>"Send Now"}
+Redirected to http://localhost:3000/error?message=Validation+error%3A+The+element+%27Documents%27+in+namespace+%27http%3A%2F%2Fwww.docusign.net%2FAPI%2F3.0%27+has+incomplete+content.+List+of+possible+elements+expected%3A+%27Document%27+in+namespace+%27http%3A%2F%2Fwww.docusign.net%2FAPI%2F3.0%27.
+Completed 302 Found in 2407ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/error?message=Validation+error%3A+The+element+%27Documents%27+in+namespace+%27http%3A%2F%2Fwww.docusign.net%2FAPI%2F3.0%27+has+incomplete+content.+List+of+possible+elements+expected%3A+%27Document%27+in+namespace+%27http%3A%2F%2Fwww.docusign.net%2FAPI%2F3.0%27." for 127.0.0.1 at 2013-08-08 12:14:36 +0530
+Processing by ErrorController#show as HTML
+  Parameters: {"message"=>"Validation error: The element 'Documents' in namespace 'http://www.docusign.net/API/3.0' has incomplete content. List of possible elements expected: 'Document' in namespace 'http://www.docusign.net/API/3.0'."}
+  Rendered error/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_template" for 127.0.0.1 at 2013-08-08 12:14:55 +0530
+Processing by SendTemplateController#create as HTML
+  Rendered send_template/_get_templates.erb (0.6ms)
+  Rendered send_template/get_template.erb within layouts/application (1.2ms)
+Completed 200 OK in 2020ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/send_template/get_template" for 127.0.0.1 at 2013-08-08 12:15:01 +0530
+Processing by SendTemplateController#get_template as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0SYNTckI1V6t29d+RFsWWlqKMk5mxBWgRIqz24pfMdc=", "tname"=>{"tid"=>""}, "LoadTemplate"=>"Select Template"}
+Redirected to http://localhost:3000/error?message=white+space+guid+string%3A+Unrecognized+Guid+format.
+Completed 302 Found in 2114ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/error?message=white+space+guid+string%3A+Unrecognized+Guid+format." for 127.0.0.1 at 2013-08-08 12:15:03 +0530
+Processing by ErrorController#show as HTML
+  Parameters: {"message"=>"white space guid string: Unrecognized Guid format."}
+  Rendered error/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 38ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/embed_docusign/new" for 127.0.0.1 at 2013-08-08 12:15:11 +0530
+Processing by EmbedDocusignController#new as HTML
+  Rendered embed_docusign/_form.html.erb (0.9ms)
+  Rendered embed_docusign/create.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 13ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_template" for 127.0.0.1 at 2013-08-08 12:15:12 +0530
+Processing by SendTemplateController#create as HTML
+  Rendered send_template/_get_templates.erb (0.7ms)
+  Rendered send_template/get_template.erb within layouts/application (1.5ms)
+Completed 200 OK in 2003ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_document" for 127.0.0.1 at 2013-08-08 12:15:23 +0530
+Processing by SendDocumentController#create as HTML
+  Rendered send_document/_form.html.erb (26.1ms)
+  Rendered send_document/create.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_document" for 127.0.0.1 at 2013-08-08 12:18:32 +0530
+Processing by SendDocumentController#create as HTML
+  Rendered send_document/_form.html.erb (4.4ms)
+  Rendered send_document/create.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_document" for 127.0.0.1 at 2013-08-08 12:19:03 +0530
+Processing by SendDocumentController#create as HTML
+ERROR: compiling _app_views_send_document__form_html_erb___2335467107469480541_70294825020440 RAISED /Users/prafulla/Workspace/cloudspokes/docusign/DocuSign-eSignature-SDK2/Ruby/DocuSignSample/app/views/send_document/_form.html.erb:150: unknown regexp options - tabl
+/Users/prafulla/Workspace/cloudspokes/docusign/DocuSign-eSignature-SDK2/Ruby/DocuSignSample/app/views/send_document/_form.html.erb:151: syntax error, unexpected '<'
+    <br/>
+     ^
+/Users/prafulla/Workspace/cloudspokes/docusign/DocuSign-eSignature-SDK2/Ruby/DocuSignSample/app/views/send_document/_form.html.erb:152: unterminated string meets end of file
+Function body:           def _app_views_send_document__form_html_erb___2335467107469480541_70294825020440(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "send_document/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('
+<script type="text/javascript">
+    $(document).ready(function () {
+        activate();
+        var today = new Date().getDate();
+        $("#reminders").datepicker({
+            showOn: "button",
+            buttonImage: "');@output_buffer.append= (root_url);@output_buffer.safe_concat('images/calendar.png",
+            buttonImageOnly: true,
+            minDate: today
+        });
+        $("#expiration").datepicker({
+            showOn: "button",
+            buttonImage: "');@output_buffer.append= (root_url);@output_buffer.safe_concat('images/calendar.png",
+            buttonImageOnly: true,
+            minDate: today + 3
+        });
+    });
+</script>
+');@output_buffer.append=  form_tag("send_document/send_envelope", :method => :post, :multipart => true) do@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    ');@output_buffer.append= ( text_field_tag('subject', nil, :placeholder => '<enter the subject>', :class => 'email'));@output_buffer.safe_concat('<!--<img alt="" src="" class="helplink" />--><br />
+    ');@output_buffer.append= ( text_area_tag('emailBlurb', nil, :placeholder => '<enter the e-mail blurb>', :rows => '4', :cols => '20', :class => 'email'));@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    <p>
+    </p>
+    <table id="recipientList" class="recipientList">
+      <tr class="recipientListHeader">
+        <th>
+          Recipient
+        </th>
+        <th>
+          E-mail
+        </th>
+        <th>
+          Security and Setting
+          <!--<img alt="" src="" class="helplink" />-->
+        </th>
+        <th>
+          Send E-mail Invite
+        </th>
+      </tr>
+      <tr id="Recipient1" name="Recipient1">
+        <td>
+          ');@output_buffer.append= ( text_field_tag :name => RecipientName1', :required => true );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        </td>
+        <td>
+          ');@output_buffer.append= ( text_field_tag :name => 'RecipientEmail1', :required => true );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        </td>
+        <td>
+          ');@output_buffer.append= ( select_tag('RecipientSecurity1', options_for_select([['None', 'None'],['Access Code:', 'AccessCode'], ['Phone Authentication', 'PhoneAuthentication']]), :onchange => 'javascript:EnableDisableInput(1)'));@output_buffer.safe_concat('
+');@output_buffer.safe_concat('          ');@output_buffer.append= ( text_field_tag('RecipientSecuritySetting1', nil, :style => 'display:none;') );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        </td>
+        <td>
+          <ul class="switcher" id="RecipientInvite1">
+            <li id="RecipientInviteon1" class="active"><a href="#" title="On">ON</a></li>
+            <li id="RecipientInviteoff1"><a href="#" title="OFF">OFF</a></li>
+            ');@output_buffer.append= ( check_box_tag('RecipientInviteToggle1', 'true', true, :style => 'display:none;') );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('          </ul>
+        </td>
+      </tr>
+    </table>
+    <input type="button" onclick="addRowToTable()" value="Add Recipient" />
+    <div id="files">
+      <p>
+        Document #1:
+        ');@output_buffer.append= ( file_field_tag('file1', :class => 'upload') );@output_buffer.safe_concat('</p>
+      <p>
+        Document #2:
+        ');@output_buffer.append= ( file_field_tag('file2', :class => 'upload') );@output_buffer.safe_concat('</p>
+    </div>
+    <table class="optionlist">
+      <tr>
+        <td>
+          ');@output_buffer.append= ( check_box_tag('stockdoc', 'true', false, :onchange => 'EnableDisableDiv()', :class => 'options') );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('          Use a stock doc
+          <!--<img alt="" src="" class="helplink" />-->
+        </td>
+        <td rowspan="3">
+          ');@output_buffer.append= ( text_field_tag('reminders', nil, :onchange => 'openPicker()', :class => 'datepickers') );@output_buffer.safe_concat('<br />
+          Add Daily Reminders
+        </td>
+      </tr>
+      <tr>
+        <td>
+          ');@output_buffer.append= ( check_box_tag('addsig', 'true', false, :checked => true, :class => 'options') );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('          Add Signatures
+          <!--<img alt="" src="" class="helplink" />-->
+        </td>
+      </tr>
+      <tr>
+        <td>
+          ');@output_buffer.append= ( check_box_tag('formfields', 'true', false, :checked => true, :class => 'options') );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('          Add Form Fields
+          <!--<img alt="" src="" class="helplink" />-->
+        </td>
+      </tr>
+      <tr>
+        <td>
+          ');@output_buffer.append= ( check_box_tag('conditionalfields', 'true', false, :checked => true, :class => 'options') );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('          Add Conditional Fields
+          <!--<img alt="" src="" class="helplink" />-->
+        </td>
+        <td rowspan="3">
+          ');@output_buffer.append= ( text_field_tag('expiration', nil, :onchange => 'openPicker()', :class => 'datepickers') );@output_buffer.safe_concat('<br />
+          Add Expiration
+        </td>
+      </tr>
+      <tr>
+        <td>
+          ');@output_buffer.append= ( check_box_tag('collabfields', 'true', false, :class => 'options') );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('          Add Collaborative Fields
+          <!--<img alt="" src="" class="helplink" />-->
+        </td>
+      </tr>
+      <tr>
+        <td>
+          ');@output_buffer.append= ( check_box_tag('enablepaper', 'true', false, :class => 'options') );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('          Enable Signing on Paper
+          <!--<img alt="" src="" class="helplink" />-->
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          ');@output_buffer.append= ( check_box_tag('signerattachment', 'true', false, :class => 'options') );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('          Request a Signer to Add an Attachment
+          <!--<img alt="" src="" class="helplink" />-->
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          ');@output_buffer.append= ( check_box_tag('enablemarkup', 'true', false, :class => 'options') );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('          Enable Signers to Mark Up the Documents
+          <!--<img alt="" src="" class="helplink" />-->
+        </td>
+      </tr>
+    </table>
+    <p />
+    <table class="submit">
+      <tr>
+        <td class="fourcolumn">
+        </td>
+        <td class="fourcolumn">
+          ');@output_buffer.append= ( submit_tag('Send Now', :name => 'SendNow', :class => "docusignbutton orange", :style => 'width:100%;') );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        </td>
+        <td class="fourcolumn">
+          ');@output_buffer.append= ( submit_tag('Edit Before Sending', :name => 'EditFirst', :class => "docusignbutton brown", :style => 'width:100%;') );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        </td>
+        <td class="fourcolumn">
+        </td>
+      </tr>
+    </table>
+    <br/>
+'); end 
+@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `module_eval'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `compile'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/template.rb:233:in `compile!'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/template.rb:142:in `block in render'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/notifications.rb:125:in `instrument'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/template.rb:141:in `render'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/renderer/partial_renderer.rb:237:in `render'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/Users/prafulla/Workspace/cloudspokes/docusign/DocuSign-eSignature-SDK2/Ruby/DocuSignSample/app/views/send_document/create.html.erb:1:in `_app_views_send_document_create_html_erb__4151273729990600904_70294824911840'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/template.rb:143:in `block in render'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/notifications.rb:125:in `instrument'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/template.rb:141:in `render'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/prafulla/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/prafulla/Workspace/cloudspokes/docusign/DocuSign-eSignature-SDK2/Ruby/DocuSignSample/app/controllers/send_document_controller.rb:5:in `create'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:414:in `_run__2383434312980925928__process_action__2936293847796574960__callbacks'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__4315555272590821259__call__2207429465171591250__callbacks'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/prafulla/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/prafulla/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/prafulla/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered send_document/_form.html.erb (9.5ms)
+  Rendered send_document/create.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (/Users/prafulla/Workspace/cloudspokes/docusign/DocuSign-eSignature-SDK2/Ruby/DocuSignSample/app/views/send_document/_form.html.erb:150: unknown regexp options - tabl
+/Users/prafulla/Workspace/cloudspokes/docusign/DocuSign-eSignature-SDK2/Ruby/DocuSignSample/app/views/send_document/_form.html.erb:151: syntax error, unexpected '<'
+    <br/>
+     ^
+/Users/prafulla/Workspace/cloudspokes/docusign/DocuSign-eSignature-SDK2/Ruby/DocuSignSample/app/views/send_document/_form.html.erb:152: unterminated string meets end of file):
+    147:         <td class="fourcolumn">
+    148:         </td>
+    149:       </tr>
+    150:     </table>
+    151:     <br/>
+    152: <% end %>
+  app/views/send_document/create.html.erb:1:in `_app_views_send_document_create_html_erb__4151273729990600904_70294824911840'
+  app/controllers/send_document_controller.rb:5:in `create'
+
+
+  Rendered /Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/send_document" for 127.0.0.1 at 2013-08-08 12:20:06 +0530
+Processing by SendDocumentController#create as HTML
+  Rendered send_document/_form.html.erb (4.2ms)
+  Rendered send_document/create.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_document" for 127.0.0.1 at 2013-08-08 12:20:54 +0530
+Processing by SendDocumentController#create as HTML
+  Rendered send_document/_form.html.erb (4.9ms)
+  Rendered send_document/create.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_document" for 127.0.0.1 at 2013-08-08 12:22:02 +0530
+Processing by SendDocumentController#create as HTML
+  Rendered send_document/_form.html.erb (4.6ms)
+  Rendered send_document/create.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_document" for 127.0.0.1 at 2013-08-08 12:23:05 +0530
+Processing by SendDocumentController#create as HTML
+  Rendered send_document/_form.html.erb (3.2ms)
+  Rendered send_document/create.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_document" for 127.0.0.1 at 2013-08-08 12:24:40 +0530
+Processing by SendDocumentController#create as HTML
+  Rendered send_document/_form.html.erb (4.3ms)
+  Rendered send_document/create.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 16ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_template" for 127.0.0.1 at 2013-08-08 12:24:55 +0530
+Processing by SendTemplateController#create as HTML
+  Rendered send_template/_get_templates.erb (0.6ms)
+  Rendered send_template/get_template.erb within layouts/application (1.3ms)
+Completed 200 OK in 2337ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/send_template/get_template" for 127.0.0.1 at 2013-08-08 12:25:31 +0530
+Processing by SendTemplateController#get_template as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0SYNTckI1V6t29d+RFsWWlqKMk5mxBWgRIqz24pfMdc=", "tname"=>{"tid"=>""}, "LoadTemplate"=>"Select Template"}
+Redirected to http://localhost:3000/error?message=white+space+guid+string%3A+Unrecognized+Guid+format.
+Completed 302 Found in 2008ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/error?message=white+space+guid+string%3A+Unrecognized+Guid+format." for 127.0.0.1 at 2013-08-08 12:25:33 +0530
+Processing by ErrorController#show as HTML
+  Parameters: {"message"=>"white space guid string: Unrecognized Guid format."}
+  Rendered error/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_template" for 127.0.0.1 at 2013-08-08 12:27:53 +0530
+Processing by SendTemplateController#create as HTML
+  Rendered send_template/_get_templates.erb (1.4ms)
+  Rendered send_template/get_template.erb within layouts/application (2.1ms)
+Completed 200 OK in 1727ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/send_template/get_template" for 127.0.0.1 at 2013-08-08 12:28:03 +0530
+Processing by SendTemplateController#get_template as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0SYNTckI1V6t29d+RFsWWlqKMk5mxBWgRIqz24pfMdc=", "tname"=>{"tid"=>""}, "LoadTemplate"=>"Select Template"}
+Redirected to http://localhost:3000/error?message=white+space+guid+string%3A+Unrecognized+Guid+format.
+Completed 302 Found in 2002ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/error?message=white+space+guid+string%3A+Unrecognized+Guid+format." for 127.0.0.1 at 2013-08-08 12:28:05 +0530
+Processing by ErrorController#show as HTML
+  Parameters: {"message"=>"white space guid string: Unrecognized Guid format."}
+  Rendered error/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_template" for 127.0.0.1 at 2013-08-08 12:28:11 +0530
+Processing by SendTemplateController#create as HTML
+  Rendered send_template/_get_templates.erb (1.4ms)
+  Rendered send_template/get_template.erb within layouts/application (2.1ms)
+Completed 200 OK in 1631ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/send_template/get_template" for 127.0.0.1 at 2013-08-08 12:28:22 +0530
+Processing by SendTemplateController#get_template as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0SYNTckI1V6t29d+RFsWWlqKMk5mxBWgRIqz24pfMdc=", "LoadTemplate"=>"Select Template"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/send_template_controller.rb:22:in `get_template'
+
+
+  Rendered /Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/embed_docusign/new" for 127.0.0.1 at 2013-08-08 12:29:37 +0530
+Processing by EmbedDocusignController#new as HTML
+  Rendered embed_docusign/_form.html.erb (0.5ms)
+  Rendered embed_docusign/create.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get_status_and_docs" for 127.0.0.1 at 2013-08-08 12:29:39 +0530
+Processing by GetStatusAndDocsController#list as HTML
+  Rendered get_status_and_docs/list.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_template" for 127.0.0.1 at 2013-08-08 12:29:41 +0530
+Processing by SendTemplateController#create as HTML
+  Rendered send_template/_get_templates.erb (24.6ms)
+  Rendered send_template/get_template.erb within layouts/application (25.3ms)
+Completed 200 OK in 2029ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_template" for 127.0.0.1 at 2013-08-08 12:29:43 +0530
+Processing by SendTemplateController#create as HTML
+  Rendered send_template/_get_templates.erb (0.7ms)
+  Rendered send_template/get_template.erb within layouts/application (1.3ms)
+Completed 200 OK in 1536ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_document" for 127.0.0.1 at 2013-08-08 12:29:46 +0530
+Processing by SendDocumentController#create as HTML
+  Rendered send_document/_form.html.erb (2.6ms)
+  Rendered send_document/create.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_template" for 127.0.0.1 at 2013-08-08 12:29:51 +0530
+Processing by SendTemplateController#create as HTML
+  Rendered send_template/_get_templates.erb (0.7ms)
+  Rendered send_template/get_template.erb within layouts/application (1.3ms)
+Completed 200 OK in 2187ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_template/create" for 127.0.0.1 at 2013-08-08 12:29:55 +0530
+
+ActionController::RoutingError (No route matches [GET] "/send_template/create"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/prafulla/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/prafulla/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/prafulla/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/send_template/" for 127.0.0.1 at 2013-08-08 12:30:03 +0530
+Processing by SendTemplateController#create as HTML
+  Rendered send_template/_get_templates.erb (0.7ms)
+  Rendered send_template/get_template.erb within layouts/application (1.4ms)
+Completed 200 OK in 1829ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_document" for 127.0.0.1 at 2013-08-08 12:31:44 +0530
+Processing by SendDocumentController#create as HTML
+  Rendered send_document/_form.html.erb (3.5ms)
+  Rendered send_document/create.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 43ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_template" for 127.0.0.1 at 2013-08-08 12:31:45 +0530
+Processing by SendTemplateController#create as HTML
+  Rendered send_template/_get_templates.erb (1.5ms)
+  Rendered send_template/get_template.erb within layouts/application (2.2ms)
+Completed 200 OK in 1709ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_template" for 127.0.0.1 at 2013-08-08 12:33:34 +0530
+Processing by SendTemplateController#create as HTML
+  Rendered send_template/_get_templates.erb (1.2ms)
+  Rendered send_template/get_template.erb within layouts/application (6.2ms)
+Completed 200 OK in 1740ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_document" for 127.0.0.1 at 2013-08-08 12:33:39 +0530
+Processing by SendDocumentController#create as HTML
+  Rendered send_document/_form.html.erb (3.3ms)
+  Rendered send_document/create.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 35ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/embed_docusign/new" for 127.0.0.1 at 2013-08-08 12:33:45 +0530
+Processing by EmbedDocusignController#new as HTML
+  Rendered embed_docusign/_form.html.erb (0.8ms)
+  Rendered embed_docusign/create.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get_status_and_docs" for 127.0.0.1 at 2013-08-08 12:33:46 +0530
+Processing by GetStatusAndDocsController#list as HTML
+  Rendered get_status_and_docs/list.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/embed_docusign/new" for 127.0.0.1 at 2013-08-08 12:33:49 +0530
+Processing by EmbedDocusignController#new as HTML
+  Rendered embed_docusign/_form.html.erb (0.4ms)
+  Rendered embed_docusign/create.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/embed_docusign/create" for 127.0.0.1 at 2013-08-08 12:33:50 +0530
+Processing by EmbedDocusignController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0SYNTckI1V6t29d+RFsWWlqKMk5mxBWgRIqz24pfMdc=", "OneSigner"=>"Create an Envelope with 1 Signer"}
+  Rendered embed_docusign/sign.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5735ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_document" for 127.0.0.1 at 2013-08-08 12:34:07 +0530
+Processing by SendDocumentController#create as HTML
+  Rendered send_document/_form.html.erb (2.7ms)
+  Rendered send_document/create.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 13ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/send_document" for 127.0.0.1 at 2013-08-08 12:40:06 +0530
+Processing by SendDocumentController#create as HTML
+  Rendered send_document/_form.html.erb (14.2ms)
+  Rendered send_document/create.html.erb within layouts/application (18.8ms)
+Completed 500 Internal Server Error in 45ms
+
+ActionView::Template::Error (undefined local variable or method `email' for #<#<Class:0x007f9bb2db7720>:0x007f9bb2dbbff0>):
+    43:           <%= text_field_tag('RecipientName1', nil, :required => true) %>
+    44:         </td>
+    45:         <td>
+    46:           <%= text_field_tag('RecipientEmail1', nil, :required => true, :type => email) %>
+    47:         </td>
+    48:         <td>
+    49:           <%= select_tag('RecipientSecurity1', options_for_select([['None', 'None'],['Access Code:', 'AccessCode'], ['Phone Authentication', 'PhoneAuthentication']]), :onchange => 'javascript:EnableDisableInput(1)')%>
+  app/views/send_document/_form.html.erb:46:in `block in _app_views_send_document__form_html_erb__3491392753415672068_70153364188100'
+  app/views/send_document/_form.html.erb:20:in `_app_views_send_document__form_html_erb__3491392753415672068_70153364188100'
+  app/views/send_document/create.html.erb:1:in `_app_views_send_document_create_html_erb__2001096583594808424_70153347668040'
+  app/controllers/send_document_controller.rb:5:in `create'
+
+
+  Rendered /Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+  Rendered /Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/prafulla/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
+
+
+Started GET "/send_document" for 127.0.0.1 at 2013-08-08 12:40:15 +0530
+Processing by SendDocumentController#create as HTML
+  Rendered send_document/_form.html.erb (3.6ms)
+  Rendered send_document/create.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 35ms (Views: 34.8ms | ActiveRecord: 0.0ms)
